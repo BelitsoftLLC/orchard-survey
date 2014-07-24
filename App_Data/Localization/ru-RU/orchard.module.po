@@ -1,0 +1,210 @@
+# Orchard resource strings - ru-RU
+# Copyright (c) 2010 Outercurve Foundation
+# All rights reserved
+# This file is distributed under the BSD license
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml
+#| msgid "Add"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml"
+msgid "Add"
+msgstr "Добавить"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml
+#| msgid "Delete"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml"
+msgid "Delete"
+msgstr "Удалить"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml
+#| msgid "AnswerOptions"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml"
+msgid "AnswerOptions"
+msgstr "Варианты ответа"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml
+#| msgid "AnswerOptions"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml"
+msgid "StartValue"
+msgstr "Количество ответов"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml
+#| msgid "option_cant_be_empty"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml"
+msgid "option_cant_be_empty"
+msgstr "Вариант ответа не может быть пустым"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml
+#| msgid "IsShowResultAfterAnswer"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/EditorTemplates/Survey.cshtml"
+msgid "IsShowResultAfterAnswer"
+msgstr "Не показывать результаты"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/Survey.cshtml
+#| msgid "SurveyResults"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/Survey.cshtml"
+msgid "SurveyResults"
+msgstr "Результаты опроса"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/Survey.cshtml
+#| msgid "votes"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/Survey.cshtml"
+msgid "votes"
+msgstr "голосов"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/Survey.cshtml
+#| msgid "AllVotes"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/Survey.cshtml"
+msgid "AllVotes"
+msgstr "Всего голосов:"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "NoItems"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "NoItems"
+msgstr "Не найдено ни одного опроса"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "Surveys"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "Surveys"
+msgstr "Опросы"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "SurveyResults"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "SurveyResults"
+msgstr "Результаты опроса"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "SurveyResults"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "Votes"
+msgstr "Голоса(-ов)"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "YourVoteAccepted"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "YourVoteAccepted"
+msgstr "Ваш голос принят"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "ResultsHide"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "ResultsHide"
+msgstr "Результаты скрыты"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "Participate"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "Participate"
+msgstr "Принять участие"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "Finished"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "Finished"
+msgstr "Завершено"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "participate"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "participate"
+msgstr "Проголосовать"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "FirstPage"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "FirstPage"
+msgstr "первая"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "PreviousPage"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "PreviousPage"
+msgstr "предыдущая"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "NextPage"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "NextPage"
+msgstr "следующая"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "LastPage"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "LastPage"
+msgstr "последняя"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml
+#| msgid "participates"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyListWidget.cshtml"
+msgid "participates"
+msgstr "голосов"
+
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml
+#| msgid "Voting"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml"
+msgid "Voting"
+msgstr "Голосование"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml
+#| msgid "Results"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml"
+msgid "Results"
+msgstr "Результаты"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml
+#| msgid "Vote"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml"
+msgid "Vote"
+msgstr "Проголосовать"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml
+#| msgid "SurveyResults"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml"
+msgid "SurveyResults"
+msgstr "Результаты опроса"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml
+#| msgid "ofVotes"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml"
+msgid "ofVotes"
+msgstr "голосов"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml
+#| msgid "AllVotes"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml"
+msgid "AllVotes"
+msgstr "Всего голосов"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml
+#| msgid "ReturnToSurveys"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml"
+msgid "ReturnToSurveys"
+msgstr "Вернуться к опросам"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml
+#| msgid "ResultsHide"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml"
+msgid "ResultsHide"
+msgstr "Результаты скрыты"
+
+#: ~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml
+#| msgid "YourVoteAccepted"
+msgctxt "~/Modules/Belitsoft.Orchard.Survey/Views/Parts/SurveyWidget.cshtml"
+msgid "YourVoteAccepted"
+msgstr "Ваш голос принят"
+
+
+msgctxt "Belitsoft.Orchard.Survey.DataMigrations.Migrations"
+msgid "Survey"
+msgstr "Опрос"
+
+msgctxt "Belitsoft.Orchard.Survey.DataMigrations.Migrations"
+msgid "SurveyWidget"
+msgstr "Опрос"
+
+msgctxt "Belitsoft.Orchard.Survey.Drivers.SurveyDriver"
+msgid "SurveyWidget"
+msgstr "Опрос"

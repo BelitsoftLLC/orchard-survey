@@ -1,0 +1,11 @@
+﻿Name: Survey
+AntiForgery: enabled
+Author: Belitsoft © 2013
+Website: http://belitsoft.com
+Version: 1.0
+OrchardVersion: 1.7
+Description: The Survey module is a data collection tool used to collect the opinions of the survey takers.
+Dependencies: Orchard.Fields
+Features:
+    Belitsoft.Orchard.Survey:
+        Description: The Survey module is a data collection tool used to collect the opinions of the survey takers.

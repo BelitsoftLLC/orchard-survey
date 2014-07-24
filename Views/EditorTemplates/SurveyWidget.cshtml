@@ -1,0 +1,5 @@
+﻿@model Belitsoft.Orchard.Survey.ViewModels.SurveyWidgetViewModel
+<fieldset>
+    <label>@T("Survey")</label>
+    @Html.DropDownListFor(t => t.SurveyId, (IEnumerable<SelectListItem>)Model.Surveys)
+</fieldset>

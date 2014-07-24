@@ -1,0 +1,23 @@
+<Placement>
+  <Place Parts_Survey_Edit="Content:3"/>
+  <Place Parts_Survey="Content:1"/>
+  <Place Parts_SurveyWidget_Edit="Content:3"/>
+  <Place Parts_SurveyWidget="Content:1"/>
+  <Place Parts_SurveyListWidget_Edit="Content:3"/>
+  <Place Parts_SurveyListWidget="Content:1"/>
+  <Match ContentType="Survey">
+    <Match DisplayType="Survey">
+      <Place Parts_Common_Metadata="-" />
+      <Place Parts_Title="-"/>
+    </Match>
+    <Match DisplayType="Summary">
+      <Place Parts_Common_Metadata="-" />
+      <Place Parts_Title_Summary="-"/>
+      <Place Parts_Contents_Clone="-"/>
+    </Match>
+    <Match DisplayType="SummaryAdmin">
+      <Place Parts_Contents_Clone_SummaryAdmin="-"/>
+    </Match>
+  </Match>
+
+</Placement>

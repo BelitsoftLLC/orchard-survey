@@ -1,0 +1,66 @@
+﻿.list_voting {
+    list-style-type: none;
+    margin: 0;
+}
+
+.list_voting_item {
+    
+}
+
+.list_voting_input {
+    float: left;
+}
+
+.list_voting_answer {
+    
+}
+
+
+.total_results {
+    font-size: 14px;
+    text-align: center;
+}
+
+.progressbar {
+    background-color: #B8B8B8;
+    height: 3px;
+}
+
+.grafic_result {
+    margin-top: 25px;
+}
+
+.polls_list_grafic {
+    margin: 0;
+}
+
+.indicator {
+    background-color: red;/*#971A08;*/
+    display: block;
+    height: 100%;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.grafic_descr {
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+
+
+.grafic_descr_left {
+    float: left;
+    font-weight: bold;
+}
+
+
+.grafic_descr_right {
+    float: right;
+}
+

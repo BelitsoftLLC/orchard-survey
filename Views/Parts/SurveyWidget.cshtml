@@ -1,0 +1,136 @@
+﻿@{
+    Script.Require("jQuery").AtHead();
+    Script.Include("jquery.cookie.js").AtHead();
+
+    Style.Include("survey").AtHead();
+    <fieldset class="fieldset_st">
+        <div id="options_@(Model.View.Id)" name="options_@(Model.View.Id)">
+            @if (!Model.View.UserIsAnswered && !Model.View.IsExpired)
+            {
+                <legend class="legend_st vote_ico">@T("Voting")</legend>
+                <div class="fieldset_content">
+                    <h3 class="list_docs_item_title">@MvcHtmlString.Create(Model.View.Body)</h3>
+
+                    @using (Html.BeginForm("Add", "Survey", new { area = "Belitsoft.Orchard.Survey" }
+                        , FormMethod.Post, new { onsubmit = "return CheckAnswer_" + Model.View.Id + "();" }))
+                    {
+                        <input type="hidden" value="@Model.View.Id" id="surveyId" name="surveyId"/>
+
+                        @Html.AntiForgeryToken()
+                        <ul class="list_voting">
+
+                            @if (Model.View.Answers != null)
+                            {
+                                for (int i = 0; i < Model.View.Answers.Count; i++)
+                                {
+                                <li class="list_voting_item">
+                                    <input type="radio" class="list_voting_input" value="@Model.View.Answers[i].Id" id="question_@(Model.View.Id)_@(i)" name="question">
+                                    <label class="list_voting_answer" for="question_@(Model.View.Id)_@(i)">@Model.View.Answers[i].Text</label>
+                                </li>
+                                }
+                            }
+                        </ul>
+
+                        <div class="list_actions">
+                            <input type="submit" name="submit_Vote" id="submit_Vote" onclick="" value="@T("Vote")" class="buttons_st">
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+        <div id="result_@(Model.View.Id)" name="result_@(Model.View.Id)" style="display: none;">
+            @if (!Model.View.IsNotShowResultAfterAnswer)
+            {
+                <legend class="legend_st polls_ico">@T("SurveyResults")</legend>
+                <div class="fieldset_content">
+                    <h3 class="list_docs_item_title"><a href="#">@MvcHtmlString.Create(Model.View.Body)</a>
+                    </h3>
+
+                    <dl class="polls_list_grafic">
+
+                        @if (Model.View.Answers != null)
+                        {
+                            for (int i = 0; i < Model.View.Answers.Count; i++)
+                            {
+                            <dt class="grafic_result">
+                                <div class="progressbar">
+                                    @{
+                                int answers = Model.View.Result[@Model.View.Answers[i].Id];
+                                int allAnswers = Model.View.NumberOfAnswer == 0 ? 1 : Model.View.NumberOfAnswer;
+                                double part = allAnswers != 0 ? (double)answers / (double)allAnswers : 0;
+                                var percents = part == 0 ? "0" : Math.Round(part * 100, 2).ToString();
+                                    }
+                                    <span style="width: @(percents.ToString().Replace(',', '.'))%" class="indicator"></span>
+                                </div>
+                            </dt>
+                            <dd class="grafic_descr clearfix">
+                                <span class="grafic_descr_left">@Model.View.Answers[i].Text</span>
+                                @{
+                                var end = Model.View.Result[@Model.View.Answers[i].Id] % 10;
+                                var votes = Model.View.Result[@Model.View.Answers[i].Id];
+                                var percentss = percents.ToString() + "%";
+                                }
+                                @if ((end <= 9 && end >= 5) || end == 0 || (votes > 10 && votes < 20))
+                                {
+                                    <span class="grafic_descr_right">@percentss (@votes @T("Votes"))</span>
+                                }
+                                else if (end == 1)
+                                {
+                                    <span class="grafic_descr_right">@percentss (@votes @T("Votes"))</span>
+                                }
+                                else
+                                {
+                                    <span class="grafic_descr_right">@percentss (@votes @T("Votes"))</span>
+                                }
+                            </dd>
+                            }
+                        }
+                    </dl>
+
+                    <p class="total_results">@T("AllVotes") @Model.View.NumberOfAnswer</p>
+                </div>
+            }
+            else
+            {
+                <h3>@T("ResultsHide")</h3>
+            }
+        </div>
+    </fieldset>
+}
+
+
+<script type="text/javascript">
+    var surveyId_@(Model.View.Id) = @Model.View.Id;
+    var isExpired_@(Model.View.Id) = "@Model.View.IsExpired";
+    var isAnswered_@(Model.View.Id) = "@Model.View.UserIsAnswered";
+    $(document).ready(function() {
+        var value = $.cookie('survey');
+        if ($.undefined != value && value.indexOf(surveyId_@(Model.View.Id).toString()) == 0) {
+            $("#result_@(Model.View.Id)").show();
+            $("#options_@(Model.View.Id)").hide();
+        } 
+        else {
+            if (isExpired_@(Model.View.Id) == "True" || isAnswered_@(Model.View.Id) == "True") {
+                $("#result_@(Model.View.Id)").show();
+                $("#options_@(Model.View.Id)").hide();
+            } 
+            else {
+                $("#result_@(Model.View.Id)").hide();
+                $("#options_@(Model.View.Id)").show();
+            }
+        }
+    });
+
+    function CheckAnswer_@(Model.View.Id)() {
+        var checkbox = $(".list_voting_item input:checked");
+        $("#submit_Vote").attr("disabled", "disabled");
+        if ($(checkbox).length == 0) {
+            alert("You did not choose an answer.");
+            $("#submit_Vote").removeAttr("disabled");
+            
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>

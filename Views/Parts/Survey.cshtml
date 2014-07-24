@@ -1,0 +1,56 @@
+﻿<h3>@T("SurveyResults")</h3>
+<div>
+    <ul>
+        <li>@Model.View.CreatedDate</li>
+    </ul>
+    <h3><a href="#">@MvcHtmlString.Create(Model.View.Body)</a>
+    </h3>
+
+    <dl class="polls_list_grafic">
+        @{
+            if (Model.View.Answers != null)
+            {
+                for (int i = 0; i < Model.View.Answers.Count; i++)
+                {
+                    <dt>
+                        <div>
+                            @{
+                            int answers = Model.View.Result[@Model.View.Answers[i].Id];
+                            int allAnswers = Model.View.NumberOfAnswer == 0 ? 1 : Model.View.NumberOfAnswer;
+                            double part = allAnswers != 0 ? (double)answers / (double)allAnswers : 0;
+                            var percents = part == 0 ? "0" : Math.Round(part * 100, 2).ToString();
+                            }
+
+                            <span style="width: @(percents)%" class="indicator"></span>
+                        </div>
+                    </dt>
+                    <dd>
+                        <span>@Model.View.Answers[i].Text</span>
+                        <span>:</span>
+                        
+                        @{
+                           var end = Model.View.Result[@Model.View.Answers[i].Id]%10;
+                           var votes = Model.View.Result[@Model.View.Answers[i].Id];
+                           var percentss = percents.ToString() + "%";
+                        }
+                        @if ((end <= 9 && end >= 5) || end == 0 || (votes > 10 && votes < 20))
+                                    {
+                                        <span class="grafic_descr_right">@percentss (@votes @T("votes"))</span>
+                                    }
+                                    else if (end == 1)
+                                    {
+                                        <span class="grafic_descr_right">@percentss (@votes @T("vote"))</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="grafic_descr_right">@percentss (@votes @T("vote"))</span>
+                                    }
+                    </dd>
+                }
+            }
+        }
+    </dl>
+
+    <p>@T("AllVotes") @Model.View.NumberOfAnswer</p>
+
+</div>
